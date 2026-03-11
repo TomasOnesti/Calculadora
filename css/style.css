@@ -1,0 +1,10 @@
+.cuerpo{
+    background-color: gray;
+    border: solid 1px black;
+    width: 10rem;
+}
+
+.tecla{
+    background-color: lightgoldenrodyellow;
+    border: solid 1px goldenrod;
+}
