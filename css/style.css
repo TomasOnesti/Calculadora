@@ -1,10 +1,97 @@
-.cuerpo{
-    background-color: gray;
-    border: solid 1px black;
-    width: 10rem;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ebebeb, #838383);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.tecla{
-    background-color: lightgoldenrodyellow;
-    border: solid 1px goldenrod;
+/* Cuerpo de la calculadora */
+.cuerpo {
+    background: #2b2b3c;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+/* Pantalla */
+#pantalla {
+    background: #111;
+    color: #0f0;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+}
+
+/* Filas */
+.orden2 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.tecla {
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tecla:hover {
+    background: #666;
+}
+
+/* Operadores */
+.operador {
+    background: #ff9500;
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.operador:hover {
+    background: #ffaa33;
+}
+
+/* Igual */
+.igual {
+    background: #28a745;
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.igual:hover {
+    background: #34d058;
+}
+
+/* Cero ocupa doble espacio */
+.cero {
+    flex: 2;
 }
